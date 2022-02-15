@@ -34,7 +34,7 @@ return array L
 if xi = yj then
 	L[i, j] = L[i-1, j-1] + 1;
 else
-	L[i, j] = 0 
+	L[i, j] = MAX(L[i,j-1],L[i-1,j]) 
 La programmazione dinamica é un paradigma di programmazione in cui invece che scomporre il problema in tanti sottoproblemi indipendenti tra loro (tipo mergesort), tutti i sottoproblemi dipendono da quello venuto prima e si appoggiano ad essi, ad esempio accade spesso con la ricorsione. 
 
 
